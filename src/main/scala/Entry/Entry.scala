@@ -2,9 +2,10 @@ package Entry
 
 import org.openqa.selenium.firefox.FirefoxDriver
 
-object Entry {
+class Entry {
   def main(args: Array[String]): Unit = {
     println(check_site_title("http://www.google.com"))
+    Tests.title_test("http://www.google.com")
   }
 
   def check_site_title(x: String) = {
@@ -15,3 +16,4 @@ object Entry {
     title
   }
 }
+
